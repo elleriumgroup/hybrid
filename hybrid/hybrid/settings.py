@@ -80,6 +80,8 @@ WSGI_APPLICATION = 'hybrid.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+# Для работы через mysql
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
