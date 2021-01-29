@@ -2,4 +2,3 @@ pip install django
 pip install pillow
 pip install mysqlclient
 pip install pandas
-fuck you Max
