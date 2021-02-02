@@ -236,9 +236,26 @@ class SPR_F10R22(models.Model):
     def __str__(self):
         return self.code + ' | ' + self.name
 
+class SPR_F10R23(models.Model):
+    code = models.CharField(max_length=5, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R23'
+        verbose_name_plural = 'F1.0 R23'
+    def __str__(self):
+        return self.code + ' | ' + self.name
 
-#r23-8196
-#r24-8111
+class SPR_F10R24(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R24'
+        verbose_name_plural = 'F1.0 R24'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+
+
 #r25k-8241
 #r25.1k=8219
 #r26-526
