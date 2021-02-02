@@ -64,91 +64,179 @@ class SPR_F11R25(models.Model):
     def __str__(self):
         return self.code + ' | ' + self.name
 
-# class SPR_F10R7_1(models.Model):
-#     code = models.CharField(max_length=1, unique=True, verbose_name='Код')
-#     name = models.CharField(max_length=100, verbose_name='Наименование')
-#     class Meta:
-#         verbose_name = 'F1.0 R7.1 Восстановлено на учет в числе ППЛ'
-#         verbose_name_plural = 'F1.0 R7.1 Восстановлены на учет в числе ППЛ'
-#     def __str__(self):
-#         return self.code + ' | ' + self.name
-#
-# #r10.3=#r9=8112
-# class SPR_F10R9(models.Model):
-#     code = models.CharField(max_length=5, unique=True, verbose_name='Код')
-#     name = models.CharField(max_length=100, verbose_name='Наименование')
-#     class Meta:
-#         verbose_name = 'F1.0 R9 Преступление выявлено'
-#         verbose_name_plural = 'F1.0 R9 Преступления выявлены'
-#     def __str__(self):
-#         return self.code + ' | ' + self.name
-#
-# class SPR_F10R9_1(models.Model):
-#     code = models.CharField(max_length=1, unique=True, verbose_name='Код')
-#     name = models.CharField(max_length=100, verbose_name='Наименование')
-#     class Meta:
-#         verbose_name = 'F1.0 R9.1'
-#         verbose_name_plural = 'F1.0 R9.1'
-#     def __str__(self):
-#         return self.code + ' | ' + self.name
-#
-# class SPR_F10R10(models.Model):
-#     code = models.CharField(max_length=4, unique=True, verbose_name='Код')
-#     name = models.CharField(max_length=100, verbose_name='Наименование')
-#     class Meta:
-#         verbose_name = 'F1.0 R10'
-#         verbose_name_plural = 'F1.0 R10'
-#     def __str__(self):
-#         return self.code + ' | ' + self.name
-#
-# class SPR_F10R10_1(models.Model):
-#     code = models.CharField(max_length=4, unique=True, verbose_name='Код')
-#     name = models.CharField(max_length=100, verbose_name='Наименование')
-#     class Meta:
-#         verbose_name = 'F1.0 R10.1'
-#         verbose_name_plural = 'F1.0 R10.1'
-#     def __str__(self):
-#         return self.code + ' | ' + self.name
-#
-# class SPR_F10R10_2(models.Model):
-#     code = models.CharField(max_length=3, unique=True, verbose_name='Код')
-#     name = models.CharField(max_length=100, verbose_name='Наименование')
-#     class Meta:
-#         verbose_name = 'F1.0 R10.2'
-#         verbose_name_plural = 'F1.0 R10.2'
-#     def __str__(self):
-#         return self.code + ' | ' + self.name
-#
-# class SPR_F10R11(models.Model):
-#     code = models.CharField(max_length=1, unique=True, verbose_name='Код')
-#     name = models.CharField(max_length=100, verbose_name='Наименование')
-#     class Meta:
-#         verbose_name = 'F1.0 R11'
-#         verbose_name_plural = 'F1.0 R11'
-#     def __str__(self):
-#         return self.code + ' | ' + self.name
-#
-# class SPR_F10R13(models.Model):
-#     code = models.CharField(max_length=5, unique=True, verbose_name='Код')
-#     name = models.CharField(max_length=100, verbose_name='Наименование')
-#     class Meta:
-#         verbose_name = 'F1.0 R13 Квалификация'
-#         verbose_name_plural = 'F1.0 R13 Квалификации'
-#     def __str__(self):
-#         return self.code + ' | ' + self.name
+class SPR_F10R7_1(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R7.1 Восстановлено на учет в числе ППЛ'
+        verbose_name_plural = 'F1.0 R7.1 Восстановлены на учет в числе ППЛ'
+    def __str__(self):
+        return self.code + ' | ' + self.name
 
-#r13-551
-#15-8104
-#r16-8105
-#17-8106
-#r18-8108
-#r19_1-8210
-#r19_2-8211
-#r19_3-8107
-#r20-525
-#r21-8109
-#r21.1-8110
-#r22-503
+#r10.3=#r9=8112
+class SPR_F10R9(models.Model):
+    code = models.CharField(max_length=5, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R9 Преступление выявлено'
+        verbose_name_plural = 'F1.0 R9 Преступления выявлены'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R9_1(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R9.1'
+        verbose_name_plural = 'F1.0 R9.1'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R10(models.Model):
+    code = models.CharField(max_length=4, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R10'
+        verbose_name_plural = 'F1.0 R10'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R10_1(models.Model):
+    code = models.CharField(max_length=4, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R10.1'
+        verbose_name_plural = 'F1.0 R10.1'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R10_2(models.Model):
+    code = models.CharField(max_length=3, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R10.2'
+        verbose_name_plural = 'F1.0 R10.2'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R11(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R11'
+        verbose_name_plural = 'F1.0 R11'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R13(models.Model):
+    code = models.CharField(max_length=5, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R13 Квалификация'
+        verbose_name_plural = 'F1.0 R13 Квалификации'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R15(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R15 Тяжесть'
+        verbose_name_plural = 'F1.0 R15 Тяжести'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R16(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R16'
+        verbose_name_plural = 'F1.0 R16'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R17(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R17'
+        verbose_name_plural = 'F1.0 R17'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R18(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R18'
+        verbose_name_plural = 'F1.0 R18'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R19_1(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R19_1'
+        verbose_name_plural = 'F1.0 R19_1'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R19_2(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R19_2'
+        verbose_name_plural = 'F1.0 R19_2'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R19_3(models.Model):
+    code = models.CharField(max_length=3, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R19_3'
+        verbose_name_plural = 'F1.0 R19_3'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R20(models.Model):
+    code = models.CharField(max_length=3, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R20'
+        verbose_name_plural = 'F1.0 R20'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R21(models.Model):
+    code = models.CharField(max_length=3, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R21'
+        verbose_name_plural = 'F1.0 R21'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R21_1(models.Model):
+    code = models.CharField(max_length=4, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R21.1'
+        verbose_name_plural = 'F1.0 R21.1'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R22(models.Model):
+    code = models.CharField(max_length=5, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R22 Отрасль'
+        verbose_name_plural = 'F1.0 R22 Отрасли'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+
 #r23-8196
 #r24-8111
 #r25k-8241
