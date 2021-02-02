@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Статистическая карточка Форма 1
 class SPR_F10R1(models.Model):
     code = models.CharField(max_length=2, unique=True, verbose_name='Код')
     name = models.CharField(max_length=100, verbose_name='Наименование')
@@ -254,30 +254,179 @@ class SPR_F10R24(models.Model):
     def __str__(self):
         return self.code + ' | ' + self.name
 
+class SPR_F10R25(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R25 Код причиненного ущерба'
+        verbose_name_plural = 'F1.0 R25 Код причиненного ущерба'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R25_1(models.Model):
+    code = models.CharField(max_length=4, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R25.1 Код наркотических средств'
+        verbose_name_plural = 'F1.0 R25.1 Код наркотических средств'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R26(models.Model):
+    code = models.CharField(max_length=3, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R26 Способ совершения'
+        verbose_name_plural = 'F1.0 R26 Способы совершения'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R27(models.Model):
+    code = models.CharField(max_length=3, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R27 Дополнительная характеристика'
+        verbose_name_plural = 'F1.0 R27 Дополнительные характеристики'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R28(models.Model):
+    code = models.CharField(max_length=3, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R28 Совершено с приминением'
+        verbose_name_plural = 'F1.0 R28 Совершены с принимением'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R29(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R29 Характеристика охраны объекта'
+        verbose_name_plural = 'F1.0 R29 Характеристика охраны объекта'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R29_1(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R29.1 Результаты осмотра места происшествия'
+        verbose_name_plural = 'F1.0 R29.1 Результаты осмотра места происшествия'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R32(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R32 Личность потерпевшего не установена'
+        verbose_name_plural = 'F1.0 R32 Личность потерпевшего не установена'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R33(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R33 Характеристика потерпевших'
+        verbose_name_plural = 'F1.0 R33 Характеристика потерпевших'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R34(models.Model):
+    code = models.CharField(max_length=4, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R34 Социальное положение'
+        verbose_name_plural = 'F1.0 R34 Социальное положение'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+#r36=r37=516
+class SPR_F10R36(models.Model):
+    code = models.CharField(max_length=3, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R36 Гражданство'
+        verbose_name_plural = 'F1.0 R36 Гражданство'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R38(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R38 Цель приезда'
+        verbose_name_plural = 'F1.0 R38 Цель приезда'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F10R40(models.Model):
+    code = models.CharField(max_length=4, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R40 В производстве'
+        verbose_name_plural = 'F1.0 R40 В производстве'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+# Статистическая карточка Форма 1.1
+class SPR_F11R9(models.Model):
+    code = models.CharField(max_length=5, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.1 R09 Преступление совершено неоднократно'
+        verbose_name_plural = 'F1.1 R09 Преступление совершено неоднократно'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F11R10(models.Model):
+    code = models.CharField(max_length=4, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.1 R10 Характеристика группы'
+        verbose_name_plural = 'F1.1 R10 Характеристика группы'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F11R11(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.1 R11 Характеристика связей группы'
+        verbose_name_plural = 'F1.1 R11 Характеристика связей группы'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F11R12(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.1 R12 Характеристика лица'
+        verbose_name_plural = 'F1.1 R12 Характеристика лица'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F11R13(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.1 R13 В состоянии опьянения'
+        verbose_name_plural = 'F1.1 R13 В состоянии опьянения'
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F11R14(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.1 R14 Ранее совершавшим'
+        verbose_name_plural = 'F1.1 R14 Ранее совершавшим'
+    def __str__(self):
+        return self.code + ' | ' + self.name
 
 
-#r25k-8241
-#r25.1k=8219
-#r26-526
-#r27-528
-#r28-8113
-#29-8205
-#29.1-8114
-#r32-8115
-#r33-8116
-#r33-8192
-#r36-516
-#r37-516
-#r37-8117
-#r40-8118
-
-#форма 1.1
-#r9-8119
-#r10-8120
-#r11-8121
-#r12-8122
-#13-8123
-#14-8124
 #15-8125
 #16-8126
 #17-8127
