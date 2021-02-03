@@ -19,3 +19,5 @@ admin.site.register(SPR_F10R13)
 admin.site.register(SPR_F10R15)
 admin.site.register(SPR_F10R16)
 admin.site.register(SPR_F10R17)
+
+admin.site.register(FORM1)
