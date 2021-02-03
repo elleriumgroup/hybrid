@@ -644,18 +644,21 @@ class SPR_F10R51(models.Model):
 
 # Форма 1-1.1-1.2 (полная)
 class FORM1(models.Model):
-    r01 = models.ForeignKey(SPR_F10R1, on_delete=models.CASCADE, verbose_name='Орган')
-    r01_organ = models.ForeignKey(SPR_F10R1_ORGAN, on_delete=models.CASCADE, verbose_name='Код органа')
-    r02 = models.ForeignKey(SPR_F10R2, on_delete=models.CASCADE, verbose_name='Учесть')
-    r51 = models.ForeignKey(SPR_F10R51, on_delete=models.CASCADE, verbose_name='Административный участок')
-    r03 = models.ForeignKey(SPR_F10R3, on_delete=models.CASCADE, verbose_name='Вид')
-    r03_year = models.CharField(max_length=4, verbose_name='Год')
-#     r03_gasorg = models.ForeignKey()
+    r01 = models.ForeignKey(SPR_F10R1, on_delete=models.CASCADE, verbose_name='Орган', blank=False)
+    r01_organ = models.ForeignKey(SPR_F10R1_ORGAN, on_delete=models.CASCADE, verbose_name='Код органа', blank=False)
+    r02 = models.ForeignKey(SPR_F10R2, on_delete=models.CASCADE, verbose_name='Учесть', blank=False)
+    r51 = models.ForeignKey(SPR_F10R51, on_delete=models.CASCADE, verbose_name='Административный участок', blank=True, null=True)
+    r03 = models.ForeignKey(SPR_F10R3, on_delete=models.CASCADE, verbose_name='Вид', blank=False)
+    r03_year = models.CharField(max_length=4, verbose_name='Год', blank=False)
+    r03_gasorg = models.ForeignKey(SPR_F10R3_GASORG, on_delete=models.CASCADE, verbose_name='Код терроргана ГАС', blank=False)
+    r03_gasps = models.CharField(max_length=17, verbose_name='Номер УД', blank=False)
+    r04 = models.CharField(max_length=2, verbose_name='Эпизод', blank=False)
+    r11 = models.DateField(verbose_name='Дата возбуждения УД', blank=False)
     class Meta:
         verbose_name = 'Статкарточка на выявленное преступление (ФОРМА 1)'
         verbose_name_plural = 'Статкарточки на выявленное преступление (ФОРМА 1)'
     def __str__(self):
-        return self.r01_organ + ' | ' + self.r03_year
+        return self.r03_gasps
 
 
 # Форма 2
