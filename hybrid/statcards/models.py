@@ -730,15 +730,55 @@ class FORM1(models.Model):
     r05_delo_podsled = models.CharField(max_length=500, verbose_name='по подследственности из...', blank=True, null=True)
     d06 = models.DateField(verbose_name='Дата направления в ИЦ')
     d07 = models.DateField(verbose_name='Дата поступления в ИЦ')
-
-
-
+    # ------ добавь новые поля
     r11 = models.DateField(verbose_name='Дата возбуждения УД', blank=False)
     class Meta:
         verbose_name = 'Статкарточка на выявленное преступление (ФОРМА 1)'
         verbose_name_plural = 'Статкарточки на выявленное преступление (ФОРМА 1)'
+        indexes = [
+            models.Index(fields=['r01', 'r02', 'r03_year', 'r03_gasorg', 'r04'], name='inx_form1_gasps')
+        ]
     def __str__(self):
         return self.r03_gasps
 
 
 # Форма 2
+class SPR_F2R10(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=500, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F2 R10 Пол'
+        verbose_name_plural = 'F2 R10 Пол'
+        ordering = ['code']
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F2R12(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=500, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F2 R12 Образование'
+        verbose_name_plural = 'F2 R12 Образование'
+        ordering = ['code']
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F2R15(models.Model):
+    code = models.CharField(max_length=1, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=500, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F2 R15 Место проживания'
+        verbose_name_plural = 'F2 R15 Место проживания'
+        ordering = ['code']
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
+class SPR_F2R16(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=500, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F2 R16 Цель приезда'
+        verbose_name_plural = 'F2 R16 Цель приезда'
+        ordering = ['code']
+    def __str__(self):
+        return self.code + ' | ' + self.name
