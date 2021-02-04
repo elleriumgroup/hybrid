@@ -33,7 +33,9 @@ insert into statcards_spr_f10r2(code, name) values
 delete from statcards_spr_f10r3;
 insert into statcards_spr_f10r3(code, name) values
     ('1','1 - УГОЛОВНОЕ ДЕЛО'),
-    ('2','2 - МАТЕРИАЛ');
+    ('2','2 - МАТЕРИАЛ'),
+    ('3','3 - УД ЧАСТНОГО ОБВИНЕНИЯ');
+    ('4','4 - УД ВЫДЕЛЕННОЕ')
 delete from statcards_spr_f10r3_gasorg;
 insert into statcards_spr_f10r3_gasorg(code, name) values
 ('01009724','01009724 - СО МУРМАНСКОГО ЛО МВД РОССИИ НА ТРАНСПОРТЕ'),
