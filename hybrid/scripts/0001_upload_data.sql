@@ -1,7 +1,7 @@
 use hybrid;
 /*Орган*/
-delete from statcards_spr_f10r1;
-insert into statcards_spr_f10r1(code, name) values
+delete from guide_spr_f10r1;
+insert into guide_spr_f10r1(code, name) values
     ('01','01 - ОВД'),
     ('02','02 - СК РФ'),
     ('04','04 - ТАМОЖ.'),
@@ -14,8 +14,8 @@ insert into statcards_spr_f10r1(code, name) values
     ('11','11 - ПС ФСБ'),
     ('14','14 - ФСКН');
 /*Территориальный орган*/
-delete from statcards_spr_f10r1_organ;
-insert into statcards_spr_f10r1_organ(code, name) values
+delete from guide_spr_f10r1_organ;
+insert into guide_spr_f10r1_organ(code, name) values
     ('01','01 - УМВД РОССИИ ПО Г. АРХАНГЕЛЬСК ПО ОБС. ОКТЯБРЬСКОГО ОКРУГА'),
     ('02','02 - ЛОМОНОСОВСКИЙ (ОП №3)'), ('03','03 - СОЛОМБАЛЬСКИЙ (ОП №5)'),
     ('04','04 - ИСАКОГОРСКИЙ (ОП №2)'), ('06','06 - СЕВЕРОДВИНСК'), ('07','07 - ВАРАВИНО-ФАКТОРИЯ (ОП №1)'),
@@ -27,19 +27,19 @@ insert into statcards_spr_f10r1_organ(code, name) values
     ('29','29 - ХОЛМОГОРСКИЙ'), ('30','30 - ШЕНКУРСКИЙ'), ('45','45 - УМВД РОССИИ ПО ГОРОДУ АРХАНГЕЛЬСКУ'),
     ('63','63 - УУР УМВД РОССИИ ПО АРХАНГЕЛЬСКОЙ ОБЛАСТИ'), ('64','64 - МИРНЫЙ'), ('65','65 - 4-Й ОТДЕЛ');
 /*Учесть*/
-delete from statcards_spr_f10r2;
-insert into statcards_spr_f10r2(code, name) values
+delete from guide_spr_f10r2;
+insert into guide_spr_f10r2(code, name) values
     ('1','1 - ОСНОВНАЯ'),
     ('2','2 - ДОПОЛНИТЕЛЬНАЯ'),
     ('3','3 - СНЯТИЕ');
-delete from statcards_spr_f10r3;
-insert into statcards_spr_f10r3(code, name) values
+delete from guide_spr_f10r3;
+insert into guide_spr_f10r3(code, name) values
     ('1','1 - УГОЛОВНОЕ ДЕЛО'),
     ('2','2 - МАТЕРИАЛ'),
-    ('3','3 - УД ЧАСТНОГО ОБВИНЕНИЯ');
-    ('4','4 - УД ВЫДЕЛЕННОЕ')
-delete from statcards_spr_f10r3_gasorg;
-insert into statcards_spr_f10r3_gasorg(code, name) values
+    ('3','3 - УД ЧАСТНОГО ОБВИНЕНИЯ'),
+    ('4','4 - УД ВЫДЕЛЕННОЕ');
+delete from guide_spr_f10r3_gasorg;
+insert into guide_spr_f10r3_gasorg(code, name) values
 ('01009724','01009724 - СО МУРМАНСКОГО ЛО МВД РОССИИ НА ТРАНСПОРТЕ'),
 ('01110001','01110001 - УМВД РОССИИ ПО Г.АРХАНГЕЛЬСКУ АРХАНГЕЛЬСКОЙ ОБЛАСТИ'),
 ('01110002','01110002 - ОМВД РФ ПО Г. СЕВЕРОДВИНСКУ АРХАНГЕЛЬСКОЙ ОБЛАСТИ'),
@@ -178,8 +178,8 @@ insert into statcards_spr_f10r3_gasorg(code, name) values
 ('11110001','11110001 - ПОГРАНИЧНОЕ УПРАВЛЕНИЕ ФСБ РОССИИ ПО АРХАНГЕЛЬСКОЙ ОБЛАСТИ'),
 ('11470001','11470001 - ПОГРАНИЧНОЕ УПРАВЛЕНИЕ ФСБ РОССИИ ПО ЗАПАДНОМУ АРКТИЧЕСКОМУ РАЙОНУ');
 /*Решения по преступениям*/
-delete from statcards_spr_f11r25;
-insert into statcards_spr_f11r25(code, name) values
+delete from guide_spr_f11r25;
+insert into guide_spr_f11r25(code, name) values
 ('01','01 - ДЕЛО НАПРАВЛЕНО ПРОКУРОРОМ В СУД В ПОРЯДКЕ:СТ. 222 УПК РФ'),
 ('02','02 - ДЕЛО ПРЕКРАЩЕНО ПО П. 3 Ч. 1 СТ. 24 УПК РФ'),
 ('03','03 - ДЕЛО ПРЕКРАЩЕНО ПО П. 3 Ч. 1 СТ. 27 УПК РФ'),
@@ -249,14 +249,14 @@ insert into statcards_spr_f11r25(code, name) values
 ('77','77 - РАНЕЕ ПРИОСТАНАВЛИВАЛОСЬ ПО Ч.3 Ч.1 СТ.208 УПК РФ БЕЗ СНЯТИЯ С УЧЕТА'),
 ('78','78 - СУДОМ ПРИНЯТО РЕШЕНИЕ ПО Ч.3 СТ. 427 УПК РФ, Ч. 1 СТ. 431 УПК РФ');
 /*Решения по преступениям*/
-delete from statcards_spr_f10r7_1;
-insert into statcards_spr_f10r7_1(code, name) values
+delete from guide_spr_f10r7_1;
+insert into guide_spr_f10r7_1(code, name) values
 ('1','1 - ВОССТАНОВЛЕНО В СВЯЗИ С ОТМЕНОЙ РАНЕЕ ПРИНЯТОГО РЕШЕНИЯ'),
 ('2','2 - ВОССТАНОВЛЕНО ПО ТЕРРИТОРИАЛЬНОСТИ ДЕЯНИЙ УЧТЕНЫЕ ДРУГИМИ ИЦ'),
 ('3','3 - ПЕРЕШЛО ИЗ ОСТАТКА НППЛ НА КОНЕЦ ОТЧЕТНОГО ПЕРИОДА');
 /*Преступление предотвращено*/
-delete from statcards_spr_f10r8;
-insert into statcards_spr_f10r8(code, name) values
+delete from guide_spr_f10r8;
+insert into guide_spr_f10r8(code, name) values
 ('01','01 - СОТРУДНИКАМИ ОВД'),
 ('02','02 - ПО ИНЦИАТИВЕ СОТРУДНИКОВ ОВД'),
 ('03','03 - СИЛАМИ ОБЩЕСТВЕННОСТИ'),
@@ -271,8 +271,8 @@ insert into statcards_spr_f10r8(code, name) values
 ('13','13 - СОТРУДНИКАМИ СО СК РФ'),
 ('85','85 - СОТРУДНИКАМИ ФСКН');
 /*Преступление выявлено*/
-delete from statcards_spr_f10r9;
-insert into statcards_spr_f10r9(code, name) values
+delete from guide_spr_f10r9;
+insert into guide_spr_f10r9(code, name) values
 ('00001','00001 СЛЕДОВАТЕЛЬ СЛЕДСТВЕННЫХ ОРГАНОВ СК РФ, В ТОМ ЧИСЛЕ ВОЕННЫХ СЛЕДСТВЕННЫХ ОР'),
 ('00002','00002 СЛЕДОВАТЕЛЬ ОРГАНОВ ВНУТРЕННИХ ДЕЛ'),
 ('00003','00003 СЛЕДОВАТЕЛЬ ПО РАССЛЕДОВАНИЮ ОПГ'),
@@ -635,8 +635,8 @@ insert into statcards_spr_f10r9(code, name) values
 ('17000','17000 ГУ МВД РОССИИ ПО ДАЛЬНЕВОСТОЧНОМУ ФО, ПОДРАЗДЕЛЕНИЙ ИТТ'),
 ('18000','18000 ГУ МВД РОССИИ ПО СЕВЕРО-КАВКАЗСКОМУ ФО, ПОДРАЗДЕЛЕНИЙ ИТТ'),
 ('19000','19000 ГУ МВД РОССИИ ПО ЮЖНОМУ ФО, ПОДРАЗДЕЛЕНИЙ ИТТ');
-delete from statcards_spr_f10r9_1;
-insert into statcards_spr_f10r9_1(code, name) values
+delete from guide_spr_f10r9_1;
+insert into guide_spr_f10r9_1(code, name) values
 ('1','1 - ПО ОПЕРАТИВНЫМ ДАННЫМ'),
 ('2','2 - С ПОМОЩЬЮ ОПЕР-ТЕХН. МЕРОПРИЯТИЙ'),
 ('3','3 - ПОДОЗРЕВАЕМЫЙ УСТАНОВЛЕН ПО ГОРЯЧИМ СЛЕДАМ'),
@@ -644,8 +644,8 @@ insert into statcards_spr_f10r9_1(code, name) values
 ('5','5 - АПК "БЕЗОПАСНЫЙ ГОРОД": ТЕРМИНАЛОВ "ГРАЖДАНИН-ПОЛИЦИЯ"'),
 ('6','6 - СИСТЕМЫ ВИДЕОНАБЛЮДЕНИЯ'),
 ('7','7 - ИНОЕ');
-delete from statcards_spr_f10r10;
-insert into statcards_spr_f10r10(code, name) values
+delete from guide_spr_f10r10;
+insert into guide_spr_f10r10(code, name) values
 ('0003','0003 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЕМ СК'),
 ('0004','0004 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛМ ОВД'),
 ('0005','0005 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЕМ ПО РАССЛ. ОРГ.ПРЕСТ.ДЕЯТ.'),
@@ -790,8 +790,8 @@ insert into statcards_spr_f10r10(code, name) values
 ('9403','9403 РУК.СЛЕД. ОРГАНА, СЛЕД. СК ГУ МВД ПО ЮФО В ОТН.СОТР.ОВД'),
 ('9404','9404 РУК.СЛЕД. ОРГАНА, СЛЕД. ОВД ГУ МВД ПО ЮФО В ОТН.СОТР.ОВД'),
 ('9405','9405 РУК.СЛЕД.ОРГАНА, СЛЕД.ПО РАССЛ. ОРГ.ПРЕСТ.ДЕЯТ ГУ МВД ПО ЮФО В ОТН.СОТР.ОВД');
-delete from statcards_spr_f10r10_1;
-insert into statcards_spr_f10r10_1(code, name) values
+delete from guide_spr_f10r10_1;
+insert into guide_spr_f10r10_1(code, name) values
 ('0030','0030 - РУКОВОДИТЕЛЕМ СЛ.ОРГАНА'),
 ('0031','0031 - ПРОКУРОРОМ ПО МАТЕРИАЛАМ СЛЕДСТВИЯ'),
 ('0032','0032 - ПРОКУРОРОМ ПО МАТЕРИАЛАМ ДОЗНАНИЯ'),
@@ -806,8 +806,8 @@ insert into statcards_spr_f10r10_1(code, name) values
 ('2031','2031 - ПОСЛЕ ОТМЕНЫ ПОСТ. О ВОЗБ ПРОКУРОРОМ ПО МАТ. СЛЕДСТВИЯ'),
 ('2032','2032 - ПОСЛЕ ОТМЕНЫ ПОСТ. О ВОЗБ ПРОКУРОРОМ ПО МАТ. ДОЗНАНИЯ'),
 ('2033','2033 - ПОСЛЕ ОТМЕНЫ ПОСТ. О ВОЗБ ПО ХОДОТ.НАЧАЛЬНИКА ОД');
-delete from statcards_spr_f10r10_2;
-insert into statcards_spr_f10r10_2(code, name) values
+delete from guide_spr_f10r10_2;
+insert into guide_spr_f10r10_2(code, name) values
 ('100','100 - ПРОКУРОРОМ'),
 ('101','101 - ПРОКУРОРОМ, ПУТЕМ НЕПРАВОМЕРНОГО ОТКАЗА В ПРИЕМЕ СООБЩЕНИЯ О ПРЕСТУПЛЕНИИ'),
 ('102','102 - ПРОКУРОРОМ, ПУТЕМ НЕРЕГИСТРАЦИИ СООБЩЕНИЯ О ПРЕСТУПЛЕНИИ'),
@@ -835,12 +835,12 @@ insert into statcards_spr_f10r10_2(code, name) values
 ('400','400 - ДР ПРАВООХРАНИТЕЛЬНЫМ ОРГАНОМ'),
 ('410','410 - ДР ПРАВООХРАНИТЕЛЬНЫМ ОРГАНОМ, РАНЕЕ СОКРЫТО ОТ УЧЕТА'),
 ('413','413 - ДР ПРАВООХРАНИТЕЛЬНЫМ ОРГАНОМ, ПУТЕМ НЕОБОСНОВАННОГО ОТКАЗА В ВОЗБ УД');
-delete from statcards_spr_f10r11;
-insert into statcards_spr_f10r11(code, name) values
+delete from guide_spr_f10r11;
+insert into guide_spr_f10r11(code, name) values
 ('1','1 - УД'),
 ('3','3 - ОТКАЗ В ВОЗБУЖД. УД');
-delete from statcards_spr_f10r13;
-insert into statcards_spr_f10r13(code, name) values
+delete from guide_spr_f10r13;
+insert into guide_spr_f10r13(code, name) values
 ('10501','10501 УМЫШЛЕННОЕ УБИЙСТВО'),
 ('10502','10502 УБИЙСТВО'),
 ('10600','10600 УБИЙСТВО НОВОРОЖДЕННОГО'),
@@ -1750,26 +1750,26 @@ insert into statcards_spr_f10r13(code, name) values
 ('36101','36101 АКТ МЕЖДУНАРОДНОГО ТЕРРОРИЗМА'),
 ('36102','36102 АКТ МЕЖДУНАРОДНОГО ТЕРРОРИЗМА'),
 ('36103','36103 АКТ МЕЖДУНАРОДНОГО ТЕРРОРИЗМА');
-delete from statcards_spr_f10r15;
-insert into statcards_spr_f10r15(code, name) values
+delete from guide_spr_f10r15;
+insert into guide_spr_f10r15(code, name) values
 ('1','1 - ТЯЖКОЕ'),
 ('2','2 - НЕБОЛЬШОЙ ТЯЖЕСТИ'),
 ('3','3 - СРЕДНЕЙ ТЯЖЕСТИ'),
 ('4','4 - ОСОБО ТЯЖКОЕ');
-delete from statcards_spr_f10r16;
-insert into statcards_spr_f10r16(code, name) values
+delete from guide_spr_f10r16;
+insert into guide_spr_f10r16(code, name) values
 ('1','1 - ПРИГОТОВЛЕНИЕ'),
 ('2','2 - ПОКУШЕНИЕ');
-delete from statcards_spr_f10r17;
-insert into statcards_spr_f10r17(code, name) values
+delete from guide_spr_f10r17;
+insert into guide_spr_f10r17(code, name) values
 ('1','1 - В КРУПНОМ РАЗМЕРЕ'),
 ('2','2 - В ОСОБО КРУПНОМ РАЗМЕРЕ'),
 ('3','3 - ЗНАЧИТЕЛЬНЫЙ УЩЕРБ'),
 ('4','4 - КРУПНЫЙ УЩЕРБ'),
 ('5','5 - ОСОБО КРУПНЫЙ УЩЕРБ'),
 ('6','6 - В ЗНАЧИТЕЛЬНОМ РАЗМЕРЕ');
-delete from statcards_spr_f10r18;
-insert into statcards_spr_f10r18(code, name) values
+delete from guide_spr_f10r18;
+insert into guide_spr_f10r18(code, name) values
 ('01','01 - ОБЩЕУГОЛОВНОЙ НАПРАВЛЕННОСТИ'),
 ('02','02 - ЭКОНОМИЧЕСКОЙ НАПРАВЛЕННОСТИ'),
 ('03','03 - НАЛОГОВОЕ ПРЕСТУПЛЕНИЕ'),
@@ -1777,8 +1777,8 @@ insert into statcards_spr_f10r18(code, name) values
 ('11','11 - КОРРУПЦИОННОЕ ОБЩЕУГ.НАПРАВЛЕННОСТИ'),
 ('12','12 - КОРРУПЦИОННОЕ ЭКОН.НАПРАВЛЕННОСТИ'),
 ('13','13 - КОРРУПЦИОННОЕ НАЛОГ.ПРЕСТУПЛЕНИЕ');
-delete from statcards_spr_f10r19_1;
-insert into statcards_spr_f10r19_1(code, name) values
+delete from guide_spr_f10r19_1;
+insert into guide_spr_f10r19_1(code, name) values
 ('1','1 - ТРАНСПОРТ ЖЕЛЕЗНОДОРОЖНЫЙ'),
 ('2','2 - ТРАНСПОРТ ВОЗДУШНЫЙ'),
 ('3','3 - ТРАНСПОРТ ВОДНЫЙ (НЕИСПОЛЬЗОВАТЬ! ТОЛЬКО ПРОСМОТР ДЛЯ ППЛ)'),
@@ -1787,8 +1787,8 @@ insert into statcards_spr_f10r19_1(code, name) values
 ('7','7 - ЖИЛОЙ СЕКТОР'),
 ('8','8 - ТРАНСПОРТ ВОДНЫХ МОРСКОЙ'),
 ('9','9 - ТРАНСПОРТ ВОДНЫЙ РЕЧНОЙ');
-delete from statcards_spr_f10r19_2;
-insert into statcards_spr_f10r19_2(code, name) values
+delete from guide_spr_f10r19_2;
+insert into guide_spr_f10r19_2(code, name) values
 ('1','1 - СЕЙФ'),
 ('2','2 - КАССОВЫЙ АППАРАТ'),
 ('3','3 - ИНОЕ МЕТАЛЛИЧЕСКОЕ ХРАНИЛИЩЕ'),
@@ -1798,8 +1798,8 @@ insert into statcards_spr_f10r19_2(code, name) values
 ('7','7 - ЛИФТ'),
 ('8','8 - КАМЕРА ХРАНЕНИЯ'),
 ('9','9 - АВТОМАТИЧЕСКАЯ КАМЕРА ХРАНЕНИЯ');
-delete from statcards_spr_f10r19_3;
-insert into statcards_spr_f10r19_3(code, name) values
+delete from guide_spr_f10r19_3;
+insert into guide_spr_f10r19_3(code, name) values
 ('008','008 - АВТОСТОЯНКА'),
 ('033','033 - ТЕЛЕГРАФ'),
 ('034','034 - ПЕРЕГОВОРНЫЙ ПУНКТ'),
@@ -1939,8 +1939,8 @@ insert into statcards_spr_f10r19_3(code, name) values
 ('590','590 - ПОЕЗД СОПРОВОЖДАЕМЫЙ СОТРУДНИКАМИ ОВД (МЕСТНЫЙ)'),
 ('591','591 - ПОЕЗД СОПРОВОЖДАЕМЫЙ СОТРУДНИКАМИ ОВД (ПРИГОРОДНЫЙ)'),
 ('600','600 - СОВЕРШЕНО ЗА ПРЕДЕЛАМИ РФ');
-delete from statcards_spr_f10r20;
-insert into statcards_spr_f10r20(code, name) values
+delete from guide_spr_f10r20;
+insert into guide_spr_f10r20(code, name) values
 ('040','040 УНИТАРНЫЕ ПРЕДПРИЯТИЯ (СОВМЕСТИМОСТЬ 2019)'),
 ('041','041 УНИТАРНЫЕ ПРЕДПРИЯТИЯ, ОСНОВАННЫЕ НА ПРАВЕ ОПЕРАТИВНОГО УПРАВЛЕНИЯ  (СОВМЕСТИМОСТЬ 2019)'),
 ('042','042 УНИТАРНЫЕ ПРЕДПРИЯТИЯ, ОСНОВАННЫЕ НА ПРАВЕ ХОЗЯЙСТВЕННОГО ВЕДЕНИЯ (СОВМЕСТИМОСТЬ 2019)'),
@@ -2101,8 +2101,8 @@ insert into statcards_spr_f10r20(code, name) values
 ('782','782 - ГОСУДАРСТВЕННЫЕ КОРПОРАЦИИ'),
 ('788','788 - ФОНДЫ'),
 ('797','797 - АВТОНОМНЫЕ НЕКОММЕРЧЕСКИЕ ОРГАНИЗАЦИИ');
-delete from statcards_spr_f10r21;
-insert into statcards_spr_f10r21(code, name) values
+delete from guide_spr_f10r21;
+insert into guide_spr_f10r21(code, name) values
 ('001','001 - В РЕСПУБЛИКАНСКОМ ЦЕНТРЕ'),
 ('002','002 - В КРАЕВОМ ИЛИ ОБЛАСТНОМ ЦЕНТРЕ'),
 ('003','003 - В ГОРОДЕ, ПГТ'),
@@ -2138,16 +2138,16 @@ insert into statcards_spr_f10r21(code, name) values
 ('902','902 - В СФЕРЕ РАЗВИТИЯ АРКТ.ЗОНЫ В КРАЕВОМ ИЛИ ОБЛ.ЦЕНТРЕ'),
 ('903','903 - В СФЕРЕ РАЗВИТИЯ АРКТ.ЗОНЫ В ГОРОДЕ, ПГТ'),
 ('904','904 - В СФЕРЕ РАЗВИТИЯ АРКТ.ЗОНЫ В СЕЛЬСКОЙ МЕСТНОСТИ');
-delete from statcards_spr_f10r21_1;
-insert into statcards_spr_f10r21_1(code, name) values
+delete from guide_spr_f10r21_1;
+insert into guide_spr_f10r21_1(code, name) values
 ('1000','1000 В ОБЩЕСТВ.МЕСТЕ'),
 ('1001','1001 НА ТЕРРИТОРИИ, ОХР. ЧОП В ОМ'),
 ('1100','1100 НА УЛИЦЕ, ПЛОЩАДИ, ПАРКЕ'),
 ('1110','1110 НА МАРШРУТЕ ПАТРУЛИР. НА УЛИЦЕ'),
 ('2000','2000 ВНЕ НАС. ПУНКТА'),
 ('2004','2004 НА АВТОДОРОГЕ ВНЕ НАСЕЛЕННОГО ПУНКТА');
-delete from statcards_spr_f10r22;
-insert into statcards_spr_f10r22(code, name) values
+delete from guide_spr_f10r22;
+insert into guide_spr_f10r22(code, name) values
 ('01000','01000 СЕЛЬСКОЕ ХОЗЯЙСТВО, ОХОТА И ПРЕДОСТАВЛЕНИЕ УСЛУГ В ЭТИХ ОБЛАСТЯХ'),
 ('01100','01100 РАСТЕНИЕВОДСТВО'),
 ('01200','01200 ЖИВОТНОВОДСТВО'),
@@ -2582,8 +2582,8 @@ insert into statcards_spr_f10r22(code, name) values
 ('93040','93040 ФИЗКУЛЬТУРНО-ОЗДОРОВИТЕЛЬНАЯ ДЕЯТЕЛЬНОСТЬ'),
 ('95000','95000 ПРЕДОСТАВЛЕНИЕ УСЛУГ ПО ВЕДЕНИЮ ДОМАШНЕГО ХОЗЯЙСТВА'),
 ('99000','99000 ДЕЯТЕЛЬНОСТЬ ЭКСТЕРРИТОРИАЛЬНЫХ ОРГАНИЗАЦИЙ');
-delete from statcards_spr_f10r23;
-insert into statcards_spr_f10r23(code, name) values
+delete from guide_spr_f10r23;
+insert into guide_spr_f10r23(code, name) values
 ('00001','00001 - ВАЛЮТА'),
 ('00002','00002 - ВЕЛОСИПЕД'),
 ('00003','00003 - НЕФТЕПРОДУКТЫ'),
@@ -2764,8 +2764,8 @@ insert into statcards_spr_f10r23(code, name) values
 ('20236','20236 - КУЛЬТУРНАЯ ЦЕННОСТЬ ДЕКОРАТИВНО ПРИКЛАДНОГО ИСКУССТВА (ХУДОЖЕСТВЕННЫЕ ИЗ'),
 ('20241','20241 - КУЛЬТУРНАЯ ЦЕННОСТЬ БЫТОВЫЕ ПРЕДМЕТЫ'),
 ('20273','20273 - КУЛЬТУРНАЯ ЦЕННОСТЬ ОРИГИНАЛЬНЫЕ СКУЛЬПТУРНЫЕ ПРОИЗВЕДЕНИЯ ИЗ ЛЮБЫХ МАТЕ');
-delete from statcards_spr_f10r24;
-insert into statcards_spr_f10r24(code, name) values
+delete from guide_spr_f10r24;
+insert into guide_spr_f10r24(code, name) values
 ('11','11 ГОСУД. РОССИЙСКАЯ'),
 ('12','12 МУНИЦИП. РОССИЙСКАЯ'),
 ('13','13 ЧАСТНАЯ РОССИЙСКАЯ'),
@@ -2789,14 +2789,14 @@ insert into statcards_spr_f10r24(code, name) values
 ('35','35 ФЕДЕРАЛЬНАЯ ИНОСТРАННАЯ'),
 ('37','37 СМЕШАННАЯ ИНОСТРАННАЯ'),
 ('38','38 ИНАЯ ИНОСТРАННАЯ');
-delete from statcards_spr_f10r25;
-insert into statcards_spr_f10r25(code, name) values
+delete from guide_spr_f10r25;
+insert into guide_spr_f10r25(code, name) values
 ('4','4 - УЩЕРБ ФЕД.БЮДЖЕТУ'),
 ('5','5 - СУММА ВЗЯТКИ'),
 ('6','6 - СУММА ПОДКУП'),
 ('7','7 - НЕЗАКОННОЕ ВОЗНАГРАЖДЕНИЕ');
-delete from statcards_spr_f10r25_1;
-insert into statcards_spr_f10r25_1(code, name) values
+delete from guide_spr_f10r25_1;
+insert into guide_spr_f10r25_1(code, name) values
 ('0011','0011 - МАК СНОТВОРНЫЙ'),
 ('0031','0031 - КОКАИНОВЫЙ КУСТ'),
 ('0051','0051 - СПОРЫНЬЯ (РОЖКИ СПОРЫНЬИ ЭРГОТАМИНОВОГО ШТАММА, РОЖКИ СПОРЫНЬИ ЭРГОТОКСИНОВОГО ШТАММА)'),
@@ -2988,8 +2988,8 @@ insert into statcards_spr_f10r25_1(code, name) values
 ('4104','4104 - СИНИЛЬНАЯ (ЦИАНИСТОВОДОРОДНАЯ) КИСЛОТА И ЦИАНИДЫ МЕТАЛЛОВ'),
 ('4105','4105 - СПИРТ ЭТИЛОВЫЙ СИНТЕТИЧЕСКИЙ, ТЕХНИЧЕСКИЙ И ПИЩЕВОЙ, НЕПРИГОДНЫЙ ДЛЯ ПРОИЗВОДСТВА АЛКОГОЛЬНОЙ ПРОДУКЦИИ'),
 ('4999','4999 - ПРОЧИЕ (ЯДОВИТЫЕ ВЕЩЕСТВА)');
-delete from statcards_spr_f10r26;
-insert into statcards_spr_f10r26(code, name) values
+delete from guide_spr_f10r26;
+insert into guide_spr_f10r26(code, name) values
 ('004','004 ЗЛОУПОТРЕБЛЕНИЕ'),
 ('006','006 ПОДЖОГ'),
 ('008','008 ВЗРЫВ'),
@@ -3095,8 +3095,8 @@ insert into statcards_spr_f10r26(code, name) values
 ('123','123 - ДРУГИЕ ФОРМЫ ПЛОХОГО ОБРАЩЕНИЯ'),
 ('124','124 - ДРУГИМИ УТОЧНЕННЫМИ СПОСОБАМИ'),
 ('125','125 - НЕУТОЧНЕННЫМ СПОСОБОМ');
-delete from statcards_spr_f10r27;
-insert into statcards_spr_f10r27(code, name) values
+delete from guide_spr_f10r27;
+insert into guide_spr_f10r27(code, name) values
 ('001','001 КАРМАННАЯ КРАЖА'),
 ('003','003 ВОВЛЕЧЕНИЕ НЕСОВЕРШЕННОЛЕТНИХ В СОВОКУПНОСТИ С ДРУГИМИ ПРЕСТУПЛЕНИЯМИ'),
 ('004','004 ПРЕСТ.СВЯЗ.С ПРИВАТИЗАЦИЕЙ'),
@@ -3290,8 +3290,8 @@ insert into statcards_spr_f10r27(code, name) values
 ('237','237 - ПРИ ПРОВЕДЕНИИ ОФИЦИАЛЬНЫХ СПОРТИВНЫХ СОРЕВНОВАНИЙ'),
 ('777','777 - РЕАЛИЗАЦИЕЙ ФЕДЕРАЛЬНЫХ ПРОЕКТОВ (ПРОГРАММ)'),
 ('888','888 - РЕАЛИЗАЦИЕЙ РЕГИОНАЛЬНЫХ ПРОЕКТОВ (ПРОГРАММ)');
-delete from statcards_spr_f10r28;
-insert into statcards_spr_f10r28(code, name) values
+delete from guide_spr_f10r28;
+insert into guide_spr_f10r28(code, name) values
 ('101','101 С ИСПОЛЬЗОВАНИЕМ ОРУДИЙ ВЗЛОМА'),
 ('102','102 С ИСПОЛЬЗОВАНИЕМ В Т.Ч. ДОМКРАТА'),
 ('103','103 С ИСПОЛЬЗОВАНИЕМ ГАЗОРЕЗКИ'),
@@ -3385,8 +3385,8 @@ insert into statcards_spr_f10r28(code, name) values
 ('337','337 С ПРИМ. ИМИТ.УСТР. СЕТИ ИНТЕРНЕТ'),
 ('338','338 С ПРИМ. ИМИТ.УСТР. ОГРАНИЧ.ПОРАЖЕНИЯ ОГН.ОРУЖИЯ'),
 ('339','339 С ПРИМ. ИМИТ.УСТР. ПНЕВМАТИЧЕСКОГО ОРУЖИЯ');
-delete from statcards_spr_f10r29;
-insert into statcards_spr_f10r29(code, name) values
+delete from guide_spr_f10r29;
+insert into guide_spr_f10r29(code, name) values
 ('01','01-ОХРАНА ВЕДОМСТВЕННАЯ'),
 ('02','02-ВНЕВЕД. ПОЛИЦЕЙСКАЯ'),
 ('04','04-ВНЕВЕД. СТОРОЖЕВАЯ'),
@@ -3397,8 +3397,8 @@ insert into statcards_spr_f10r29(code, name) values
 ('09','09 - ОХРАНА РОСГВАРДИИ'),
 ('10','10 - ФГУП ОХРАНА'),
 ('20','20-АВТОНОМНАЯ');
-delete from statcards_spr_f10r29_1;
-insert into statcards_spr_f10r29_1(code, name) values
+delete from guide_spr_f10r29_1;
+insert into guide_spr_f10r29_1(code, name) values
 ('01','01 ИЗЬЯТЫ СЛЕДЫ РУК'),
 ('02','02 ИЗЬЯТЫ СЛЕДЫ ОБУВИ'),
 ('03','03 ИЗЬЯТЫ СЛЕДЫ БИОЛОГИЧЕСКОГО ПРОИСХ.'),
@@ -3423,13 +3423,13 @@ insert into statcards_spr_f10r29_1(code, name) values
 ('07','07 - ТРУПОВ И ЧЕЛОВЕЧЕСКИХ ОСТАНКОВ'),
 ('08','08 - РОЗЫСКНОЙ СОБАКОЙ'),
 ('09','09 - ИНОЙ СОБАКОЙ');
-delete from statcards_spr_f10r32;
-insert into statcards_spr_f10r32(code, name) values
+delete from guide_spr_f10r32;
+insert into guide_spr_f10r32(code, name) values
 ('1','1 ЛИЧНОСТЬ ПОТЕРПЕВШЕГО НЕ УСТАНОВЛЕНА'),
 ('2','2 УЩЕРБ ПРИЧИНЕН ЮРИД.ЛИЦУ'),
 ('3','3 УЩЕРБ ПРИЧИНЕН ГОСУДАРСТВУ');
-delete from statcards_spr_f10r33;
-insert into statcards_spr_f10r33(code, name) values
+delete from guide_spr_f10r33;
+insert into guide_spr_f10r33(code, name) values
 ('01','01 МАЛОЛЕТНИЙ ДО 14 ЛЕТ'),
 ('02','02 НЕСОВЕРШЕННОЛЕТНИЙ'),
 ('03','03 ПОЖИЛОЙ'),
@@ -3451,8 +3451,8 @@ insert into statcards_spr_f10r33(code, name) values
 ('80','80 ДОЧЬ'),
 ('90','90 РОДСТВЕННИК'),
 ('99','99 - ИНОЕ ЛИЦО');
-delete from statcards_spr_f10r34;
-insert into statcards_spr_f10r34(code, name) values
+delete from guide_spr_f10r34;
+insert into guide_spr_f10r34(code, name) values
 ('0001','0001 - ИЖДИВЕНЕЦ'),
 ('0002','0002 - БЕЗ ПОСТ.ИСТОЧ.ДОХОДА'),
 ('0004','0004 - ЛИЦО В ТЕРР.ОРГАНЕ САМОУПР-Я'),
@@ -3558,8 +3558,8 @@ insert into statcards_spr_f10r34(code, name) values
 ('7016','7016 - СУБЪЕКТ ПРЕДПРИНИМАТЕЛЬСКОЙ ДЕЯТЕЛЬНОСТИ ПБОЮЛ'),
 ('7017','7017 - СУБЪЕКТ ПРЕДПРИНИМАТЕЛЬСКОЙ ДЕЯТЕЛЬНОСТИ ЗАН. МЕЛКООПТОВОЙ ТОРГОВЛЕЙ'),
 ('8000','8000 - ПЕНСИОНЕР ПО ИНОМУ ВИДУ ГОСУДАРСТВЕННОГО ПЕНСИОННОГО ОБЕСПЕЧЕНИЯ');
-delete from statcards_spr_f10r36;
-insert into statcards_spr_f10r36(code, name) values
+delete from guide_spr_f10r36;
+insert into guide_spr_f10r36(code, name) values
 ('021','021 АВСТРАЛИЯ'),
 ('025','025 АВСТРИЯ'),
 ('029','029 АЗЕРБАЙДЖАН'),
@@ -3766,8 +3766,8 @@ insert into statcards_spr_f10r36(code, name) values
 ('829','829 ДРУГИЕ'),
 ('831','831 АБХАЗИЯ'),
 ('900','900 ЛИЦО БЕЗ ГРАЖДАНСТВА');
-delete from statcards_spr_f10r38;
-insert into statcards_spr_f10r38(code, name) values
+delete from guide_spr_f10r38;
+insert into guide_spr_f10r38(code, name) values
 ('01','01 ЧАСТНАЯ ПОЕЗДКА'),
 ('02','02 ТУРИЗМ'),
 ('03','03 КОМАНДИРОВКА'),
@@ -3781,8 +3781,8 @@ insert into statcards_spr_f10r38(code, name) values
 ('13','13 ТРУДОВОЙ МИГРАНТ'),
 ('14','14 НЕЗАКОННЫЙ МИГРАНТ'),
 ('15','15 СООТЕЧ.-УЧ. ГОС. ПРОГРАММЫ');
-delete from statcards_spr_f10r40;
-insert into statcards_spr_f10r40(code, name) values
+delete from guide_spr_f10r40;
+insert into guide_spr_f10r40(code, name) values
 ('0001','0001 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЯ СК'),
 ('0002','0002 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЯ ОВД'),
 ('0003','0003 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЯ ПО РАССЛ. ОРГ.ПРЕСТ.ДЕЯТ.'),
@@ -3831,8 +3831,8 @@ insert into statcards_spr_f10r40(code, name) values
 ('9001','9001 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЯ СК ГУ МВД РОССИИ ПО ЮФО'),
 ('9002','9002 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЯ ОВД ГУ МВД РОССИИ ПО ЮФО'),
 ('9003','9003 РУК.СЛЕД.ОРГАНА, СЛЕДОВАТЕЛЯ ПО РАССЛ. ОРГ.ПРЕСТ.ДЕЯТ ГУ МВД РОССИИ ПО ЮФО');
-delete from statcards_spr_f11r9;
-insert into statcards_spr_f11r9(code, name) values
+delete from guide_spr_f11r9;
+insert into guide_spr_f11r9(code, name) values
 ('00004','00004 НА АВТОДОРОГЕ'),
 ('01000','01000 В ОБЩЕСТВ.МЕСТЕ'),
 ('01001','01001 НА ТЕРРИТОРИИ, ОХР. ЧОП'),
@@ -3849,8 +3849,8 @@ insert into statcards_spr_f11r9(code, name) values
 ('21110','21110 НА МАРШРУТЕ ПАТРУЛИР. (СЕРИЙНО)'),
 ('22000','22000 ВНЕ НАС. ПУНКТА (СЕРИЙНО)'),
 ('22004','22004 НА АВТОДОРОГЕ (СЕРИЙНО)');
-delete from statcards_spr_f11r10;
-insert into statcards_spr_f11r10(code, name) values
+delete from guide_spr_f11r10;
+insert into guide_spr_f11r10(code, name) values
 ('0100','0100 ПРЕСТ.СООБЩЕСТВА'),
 ('0101','0101 ПРЕСТ.СООБЩ. С УЧАСТИЕМ ИНОСТРАННЫХ ГРАЖДАН'),
 ('0102','0102 ПРЕСТ.СООБЩ. С УЧАСТИЕМ ЛИЦ БЕЗ ГРАЖД.'),
@@ -4075,8 +4075,8 @@ insert into statcards_spr_f11r10(code, name) values
 ('1434','1434 ЭТН.ГРУППА ЛИЦ ПО СГОВОРУ С УЧ. Н/ЛЕТНИХ ТОЛЬКО ИНОСТР. ГРАЖДАН'),
 ('1435','1435 ЭТН.ГРУППА ЛИЦ ПО СГОВОРУ С УЧ. Н/ЛЕТНИХ ТОЛЬКО ЛИЦ БЕЗ ГР.'),
 ('1436','1436 ЭТН.ГРУППА ЛИЦ ПО СГОВОРУ С УЧ. Н/ЛЕТНИХ ТОЛЬКО ИНОСТР. ИЗ СНГ');
-delete from statcards_spr_f11r11;
-insert into statcards_spr_f11r11(code, name) values
+delete from guide_spr_f11r11;
+insert into guide_spr_f11r11(code, name) values
 ('01','01 КОРУМПИРОВАННЫМИ'),
 ('02','02 МЕЖДУНАРОДНЫМИ'),
 ('03','03 МЕЖРЕГИОНАЛЬНЫМИ'),
@@ -4085,8 +4085,8 @@ insert into statcards_spr_f11r11(code, name) values
 ('12','12 МЕЖДУНАРОДНЫМИ, СФОРМ. НА ЭТНИЧ.ОСН.'),
 ('13','13 МЕЖРЕГИОНАЛЬНЫМИ, СФОРМ. НА ЭТНИЧ.ОСН.'),
 ('14','14 ДАЛЬНЕГО ЗАРУБЕЖЬЯ, СФОРМ. НА ЭТНИЧ.ОСН.');
-delete from statcards_spr_f11r12;
-insert into statcards_spr_f11r12(code, name) values
+delete from guide_spr_f11r12;
+insert into guide_spr_f11r12(code, name) values
 ('01','01 УЧАСТНИКОМ ОРГ.ПРЕСТ.ГРУППЫ'),
 ('02','02 ЖЕНЩИНОЙ'),
 ('03','03 Н/ЛЕТНИМ'),
@@ -4097,16 +4097,16 @@ insert into statcards_spr_f11r12(code, name) values
 ('08','08 МАЛОЛЕТНИМ'),
 ('09','09 ПОД ВИДОМ СОТР. ПРАВ.ОРГАНА'),
 ('10','10 УЧАСТНИКОМ ПРЕСТ.СООБЩЕСТВА');
-delete from statcards_spr_f11r13;
-insert into statcards_spr_f11r13(code, name) values
+delete from guide_spr_f11r13;
+insert into guide_spr_f11r13(code, name) values
 ('1','1 АЛКОГОЛЬНОГО ОПЬЯНЕНИЯ'),
 ('2','2 НАРКОТИЧЕСКОГО ОПЬЯНЕНИЯ'),
 ('4','4 ТОКСИЧЕСКОГО ОПЬЯНЕНИЯ'),
 ('5','5 ХРОНИЧЕСКИМ АЛКОГОЛИКОМ'),
 ('6','6 ПОТРЕБИТЕЛЕМ НАРКОТИЧЕСКИХ СРЕДСТВ И ПСИХОТРОПНЫХ ВЕЩЕСТВ'),
 ('7','7 ТОКСИКОМАНОМ');
-delete from statcards_spr_f11r14;
-insert into statcards_spr_f11r14(code, name) values
+delete from guide_spr_f11r14;
+insert into guide_spr_f11r14(code, name) values
 ('1','1 РАНЕЕ СОВЕРШАВШИМ'),
 ('2','2 В СОСТАВЕ ОРГ.ГРУППЫ'),
 ('3','3 НА ТРАНСПОРТЕ'),
@@ -4116,8 +4116,8 @@ insert into statcards_spr_f11r14(code, name) values
 ('7','7 НАС. ДЕЙСТВ. СЕКСУАЛ.ХАР.'),
 ('8','8 ИЗНАСИЛОВАНИЕ'),
 ('9','9 СВЯЗАННОЕ С НЕЗАКОННЫМ ОБОРОТОВ НАРКОТИКОВ');
-delete from statcards_spr_f11r15;
-insert into statcards_spr_f11r15(code, name) values
+delete from guide_spr_f11r15;
+insert into guide_spr_f11r15(code, name) values
 ('100','100 ОДИН РАЗ'),
 ('101','101 ОДИН РАЗ ЗА АНАЛОГИЧ.ПРЕСТ.'),
 ('102','102 ОДИН РАЗ ЗА ХИЩЕНИЕ'),
@@ -4142,26 +4142,26 @@ insert into statcards_spr_f11r15(code, name) values
 ('209','209 ДВА И БОЛЕЕ ЗА УКЛОН. ОТ УПЛ. НАЛОГА'),
 ('211','211 ДВА И БОЛЕЕ ЗА ПРЕСТУП.СВЯЗАННОЕ С НЕЗАК.ОБОРОТОМ НАРКОТИКОВ'),
 ('212','212 ДВА И БОЛЕЕ ЗА ПРЕСТУП.ПРОТИВ ПОЛОВОЙ НЕПРИКОСН.НЕСОВЕРШЕННОЛЕТНЕГО');
-delete from statcards_spr_f11r16;
-insert into statcards_spr_f11r16(code, name) values
+delete from guide_spr_f11r16;
+insert into guide_spr_f11r16(code, name) values
 ('1','1 РЕЦИДИВ'),
 ('2','2 ОПАСНЫЙ'),
 ('3','3 ОСОБО ОПАСНЫЙ');
-delete from statcards_spr_f11r17;
-insert into statcards_spr_f11r17(code, name) values
+delete from guide_spr_f11r17;
+insert into guide_spr_f11r17(code, name) values
 ('1','1 ОБВИНЯЕМЫМ НЕ ПОД СТРАЖЕЙ'),
 ('2','2 ЛИЦОМ В РОЗЫСКЕ'),
 ('3','3 ЛИЦОМ В ФЕДЕР.РОЗЫСКЕ'),
 ('4','4 ЛИЦОМ В МЕЖДУНАР.РОЗЫСКЕ');
-delete from statcards_spr_f11r20;
-insert into statcards_spr_f11r20(code, name) values
+delete from guide_spr_f11r20;
+insert into guide_spr_f11r20(code, name) values
 ('1','1 МЕСТНЫЙ ЖИТЕЛЬ'),
 ('2','2 ЖИТЕЛЬ ДР.КРАЯ, ОБЛАСТИ'),
 ('3','3 ПРОЖИВАЛ В ОБЩЕЖИТИИ'),
 ('4','4 СОДЕРЖАЛСЯ В ИУ'),
 ('5','5 БОМЖ');
-delete from statcards_spr_f11r21;
-insert into statcards_spr_f11r21(code, name) values
+delete from guide_spr_f11r21;
+insert into guide_spr_f11r21(code, name) values
 ('01','01 ЧАСТНАЯ ПОЕЗДКА'),
 ('02','02 ТУРИЗМ'),
 ('03','03 КОМАНДИРОВКА'),
@@ -4175,8 +4175,8 @@ insert into statcards_spr_f11r21(code, name) values
 ('13','13 ТРУДОВОЙ МИГРАНТ'),
 ('14','14 НЕЗАКОННЫЙ МИГРАНТ'),
 ('15','15 УЧАСТНИК ГОС.ПРОГР.');
-delete from statcards_spr_f11r22;
-insert into statcards_spr_f11r22(code, name) values
+delete from guide_spr_f11r22;
+insert into guide_spr_f11r22(code, name) values
 ('001','001 РУССКИЕ'),
 ('002','002 АВАРЦЫ'),
 ('003','003 ТЛИБИШИНЦЫ'),
@@ -4492,8 +4492,8 @@ insert into statcards_spr_f11r22(code, name) values
 ('388','388 ЮЖНОАФРИКАНЦЫ'),
 ('389','389 ЯМАЙЦЫ'),
 ('999','999 ДРУГИЕ НАЦИОНАЛЬНОСТИ');
-delete from statcards_spr_f11r26;
-insert into statcards_spr_f11r26(code, name) values
+delete from guide_spr_f11r26;
+insert into guide_spr_f11r26(code, name) values
 ('01','01 КОРЫСТНЫЕ ПОБУЖДЕНИЯ'),
 ('02','02 ПОЛУЧЕНИЕ НАРКОТ. СРЕДСТВ'),
 ('03','03 ПОЛУЧЕНИЕ СДВ'),
@@ -4526,13 +4526,13 @@ insert into statcards_spr_f11r26(code, name) values
 ('34','34 ИДЕОЛОГИЧЕСКАЯ, ПОЛИТИЧЕСКАЯ ВРАЖДА, МЕСТЬ'),
 ('35','35 ВРАЖДА, МЕСТЬ В ОТН. КАКОЙ-ЛИБО СОЦИАЛЬНОЙ ГРУППЫ'),
 ('36','36 КОРЫСТНЫЕ ПОБУЖДЕНИЯ НА ПОЛУЧЕНИЕ ИМУЩЕСТВЕННЫХ ПРАВ');
-delete from statcards_spr_f11r27;
-insert into statcards_spr_f11r27(code, name) values
+delete from guide_spr_f11r27;
+insert into guide_spr_f11r27(code, name) values
 ('1','1 - В ХОДЕ РАССЛЕДОВАНИЯ'),
 ('2','2 - ЯВКА С ПОВИННОЙ'),
 ('3','3 - В ХОДЕ ДОЗНАНИЯ');
-delete from statcards_spr_f11r28;
-insert into statcards_spr_f11r28(code, name) values
+delete from guide_spr_f11r28;
+insert into guide_spr_f11r28(code, name) values
 ('01','01 ВСЕГО'),
 ('02','02 СУММА СОКРЫТОГО ДОХОДА'),
 ('03','03 СУММА НЕУПЛАЧЕННОГО НАЛОГА'),
@@ -4551,8 +4551,8 @@ insert into statcards_spr_f11r28(code, name) values
 ('20','20 СУММА НЕЗАК.ВОЗНАГРАЖДЕНИЯ'),
 ('24','24 - СУММА НЕУПЛАЧЕННОЙ ЗАРПЛАТЫ, ПЕСИИ, СТИПЕНДИИ'),
 ('25','25 СУММА НЕУПЛ. АЛИМЕНТОВ');
-delete from statcards_spr_f11r30;
-insert into statcards_spr_f11r30(code, name) values
+delete from guide_spr_f11r30;
+insert into guide_spr_f11r30(code, name) values
 ('01','01 РАДИОСТАНЦИИ'),
 ('13','13 РАДИОТЕЛЕФОНЫ'),
 ('14','14 СИСТЕМЫ НАВИГАЦИИ'),
@@ -4570,8 +4570,8 @@ insert into statcards_spr_f11r30(code, name) values
 ('26','26 ТЕХ.СР. ПЕРЕХВ.С КАНАЛОВ СВЯЗИ'),
 ('27','27 ТЕХ.СР. КОНТР. ПЕРЕМ.ТРАНС.СР-ТВ'),
 ('28','28 ТЕХ.СР. ОБСЛ.ПОМЕЩ.,ТС И ДР.ОБ.');
-delete from statcards_spr_f11r31;
-insert into statcards_spr_f11r31(code, name) values
+delete from guide_spr_f11r31;
+insert into guide_spr_f11r31(code, name) values
 ('01','01 ЭКП ОВД'),
 ('03','03 ПОДР.ИНЫХ ЭКСП.УЧРЕЖДЕНИЙ'),
 ('04','04 ЭКП СК'),
@@ -4591,8 +4591,8 @@ insert into statcards_spr_f11r31(code, name) values
 ('51','51 ДР. СЛЕД.ДЕЙСТВИЙ ЭКП ОВД'),
 ('53','53 ДР. СЛЕД.ДЕЙСТВИЙ ПОДР.ИНЫХ ЭКСП.УЧ.'),
 ('54','54 ДР. СЛЕД.ДЕЙСТВИЙ ЭКП СК');
-delete from statcards_spr_f11r32;
-insert into statcards_spr_f11r32(code, name) values
+delete from guide_spr_f11r32;
+insert into guide_spr_f11r32(code, name) values
 ('02','02 ОПЕР-СПРАВ. УЧЕТОВ ИЦ'),
 ('04','04 ОПЕР. УЧЕТА ИЦ'),
 ('06','06 АВТОМАТ. УЧЕТА ГИБДД'),
@@ -4607,16 +4607,16 @@ insert into statcards_spr_f11r32(code, name) values
 ('16','16 КРИМ. УЧЕТОВ ИЦ'),
 ('17','17 ДАКТО УЧЕТОВ ИЦ'),
 ('18','18 ИС ОРИ');
-delete from statcards_spr_f11r32_1;
-insert into statcards_spr_f11r32_1(code, name) values
+delete from guide_spr_f11r32_1;
+insert into guide_spr_f11r32_1(code, name) values
 ('1','1 - ЕИТКС'),
 ('2','2 - ТЕХНИЧЕСКИХ СРЕДСТВ'),
 ('5','5 - ТЕХ.СРЕДСТВ: АПК БЕЗОПАСНЫЙ ГОРОД, ТЕРМИНАЛОВ ГРАЖДАНИН-ПОЛИЦИЯ'),
 ('6','6 - СИСТЕМЫ ВИДЕОНАБЛЮДЕНИЯ'),
 ('7','7 - УДАЛЕННЫЙ ДОСТУП К ИБД'),
 ('8','8 - ИНОЕ');
-delete from statcards_spr_f11r33;
-insert into statcards_spr_f11r33(code, name) values
+delete from guide_spr_f11r33;
+insert into guide_spr_f11r33(code, name) values
 ('0001','0001 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЕМ СК'),
 ('0002','0002 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЕМ ОВД'),
 ('0003','0003 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЕМ ПО РАССЛ. ОРГ.ПРЕСТ.ДЕЯТ.'),
@@ -4665,8 +4665,8 @@ insert into statcards_spr_f11r33(code, name) values
 ('9001','9001 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЕМ СК ГУ МВД РОССИИ ПО ЮФО'),
 ('9002','9002 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЕМ ОВД ГУ МВД РОССИИ ПО ЮФО'),
 ('9003','9003 РУК.СЛЕД.ОРГАНА, СЛЕДОВАТЕЛЕМ ПО РАССЛ. ОРГ.ПРЕСТ.ДЕЯТ ГУ МВД РОССИИ ПО ЮФО');
-delete from statcards_spr_f11r35_1;
-insert into statcards_spr_f11r35_1(code, name) values
+delete from guide_spr_f11r35_1;
+insert into guide_spr_f11r35_1(code, name) values
 ('01','01 - В ИВС'),
 ('02','02 - В ИУ'),
 ('03','03 - В ЛИУ'),
@@ -4711,8 +4711,8 @@ insert into statcards_spr_f11r35_1(code, name) values
 ('92','92 - ГУ МВД РОССИИ ПО ЮФО В ИУ'),
 ('93','93 - ГУ МВД РОССИИ ПО ЮФО В ЛИУ'),
 ('94','94 - ГУ МВД РОССИИ ПО ЮФО В СИЗО');
-delete from statcards_spr_f11r35_2;
-insert into statcards_spr_f11r35_2(code, name) values
+delete from guide_spr_f11r35_2;
+insert into guide_spr_f11r35_2(code, name) values
 ('10','10 - ПОДРАЗДЕЛЕНИЕ ПО ЭКОН.БЕЗОП.И ПРОТИВОДЕЙСТВИИ КОРРУПЦИИ'),
 ('13','13 - УР'),
 ('15','15 - ИУ'),
@@ -4738,8 +4738,8 @@ insert into statcards_spr_f11r35_2(code, name) values
 ('85','85 - ФСКН'),
 ('98','98 - ФСКН ОПЕР.'),
 ('99','99 - ПО КОНТРОЛЮ ЗА ЛЕГАЛЬНЫМ ОБОРОТОМ НАРКОТИКОВ');
-delete from statcards_spr_f11r35_2;
-insert into statcards_spr_f11r35_2(code, name) values
+delete from guide_spr_f11r35_2;
+insert into guide_spr_f11r35_2(code, name) values
 ('02','02 - СООБЩЕНИЕ А'),
 ('03','03 - СООБЩЕНИЕ АР'),
 ('04','04 - СООБЩЕНИЕ Р'),
@@ -4811,8 +4811,8 @@ insert into statcards_spr_f11r35_2(code, name) values
 ('97','97 - ОНД АНОНОМНОЕ СОДЕЙСТВИЕ ГРАЖДАН'),
 ('98','98 - ОНД ОПЕРАТИВНЫЙ КОНТАКТ'),
 ('99','99 - ОНД СООБЩЕНИЕ ДЛ');
-delete from statcards_spr_f11r36;
-insert into statcards_spr_f11r36(code, name) values
+delete from guide_spr_f11r36;
+insert into guide_spr_f11r36(code, name) values
 ('01','01 - ЛИЧНЫЙ СЫСК'),
 ('02','02 - СИЛЫ ОБЩЕСТВЕННОСТИ'),
 ('03','03 - СЛУЖ-РОЗЫСК. СОБАКИ'),
@@ -4823,19 +4823,19 @@ insert into statcards_spr_f11r36(code, name) values
 ('08','08 - МАРКИРУЮЩИЕ СХВ'),
 ('09','09 - С ИСП. АОСН'),
 ('11','11 - ГОСУДАРСТВЕННАЯ ЗАЩИТА');
-delete from statcards_spr_f12r9;
-insert into statcards_spr_f12r9(code, name) values
+delete from guide_spr_f12r9;
+insert into guide_spr_f12r9(code, name) values
 ('1','1 - СТ.91,92 УПК'),
 ('3','3 - СТ.100 УПК'),
 ('4','4 - СТ.46 Ч.1 П.1'),
 ('5','5 - СТ.111 Ч.1 П.1'),
 ('6','6 - СТ.46 Ч.1 П.1');
-delete from statcards_spr_f12r10;
-insert into statcards_spr_f12r10(code, name) values
+delete from guide_spr_f12r10;
+insert into guide_spr_f12r10(code, name) values
 ('1','ДА'),
 ('0','НЕТ');
-delete from statcards_spr_f12r11;
-insert into statcards_spr_f12r11(code, name) values
+delete from guide_spr_f12r11;
+insert into guide_spr_f12r11(code, name) values
 ('1','1 - ПОДПИСКА О НЕВЫЕЗДЕ'),
 ('2','2 - ЛИЧНОЕ ПОРУЧИТЕЛЬСТВО'),
 ('4','4 - ЗАКЛЮЧЕНИЕ ПОД СТРАЖУ'),
@@ -4844,8 +4844,8 @@ insert into statcards_spr_f12r11(code, name) values
 ('7','7 - ДОМАШНИЙ АРЕСТ'),
 ('8','8 - ПРИСМОТР ЗА НЕСОВЕРШЕННОЛЕТНИМИ'),
 ('9','9 - МЕРА ПРОЦЕССУАЛЬНОГО ПРИНУЖДЕНИЯ: ОБЯЗАТЕЛЬСТВО О ЯВКЕ');
-delete from statcards_spr_f12r13;
-insert into statcards_spr_f12r13(code, name) values
+delete from guide_spr_f12r13;
+insert into guide_spr_f12r13(code, name) values
 ('0001','0001 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЯ СК'),
 ('0002','0002 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЯ ОВД'),
 ('0003','0003 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЯ ПО РАССЛ. ОРГ.ПРЕСТ.ДЕЯТ.'),
@@ -4895,16 +4895,16 @@ insert into statcards_spr_f12r13(code, name) values
 ('9001','9001 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЯ СК ГУ МВД РОССИИ ПО ЮФО'),
 ('9002','9002 РУК.СЛЕД. ОРГАНА, СЛЕДОВАТЕЛЯ ОВД ГУ МВД РОССИИ ПО ЮФО'),
 ('9003','9003 РУК.СЛЕД.ОРГАНА, СЛЕДОВАТЕЛЯ ПО РАССЛ. ОРГ.ПРЕСТ.ДЕЯТ ГУ МВД РОССИИ ПО ЮФО');
-delete from statcards_spr_f12r14_1;
-insert into statcards_spr_f12r14_1(code, name) values
+delete from guide_spr_f12r14_1;
+insert into guide_spr_f12r14_1(code, name) values
 ('1','1 - АОР'),
 ('2','2 - ПО РОЗЫСКУ ЛИЦ'),
 ('3','3 - ПРОТИВ ЛИЧНОСТИ'),
 ('4','4 - ПРОТИВ СОБСТВЕННОСТИ'),
 ('5','5 - ОБНОН'),
 ('6','6 - ОБОП');
-delete from statcards_spr_f10r51;
-insert into statcards_spr_f10r51(code, name) values
+delete from guide_spr_f10r51;
+insert into guide_spr_f10r51(code, name) values
 ('0100','0100 - ОКТЯБРЬСКИЙ'),
 ('0200','0200 - ЛОМОНОСОВСКИЙ'),
 ('0300','0300 - СОЛОМБАЛЬСКИЙ'),
@@ -5200,12 +5200,12 @@ insert into statcards_spr_f10r51(code, name) values
 ('6503','6503 - ОАО СЕВМАШ'),
 ('6504','6504 - 412 GCHP'),
 ('6599','6599 - ИНАЯ ТЕРРИТОРИЯ');
-delete from statcards_spr_f2r10;
-insert into statcards_spr_f2r10(code, name) values
+delete from guide_spr_f2r10;
+insert into guide_spr_f2r10(code, name) values
 ('2','ЖЕН'),
 ('1','МУЖ');
-delete from statcards_spr_f2r12;
-insert into statcards_spr_f2r12(code, name) values
+delete from guide_spr_f2r12;
+insert into guide_spr_f2r12(code, name) values
 ('1','1 - ВЫСШЕЕ ПРОФЕССИОНАЛЬНОЕ'),
 ('2','2 - СРЕДНЕЕ ПРОФЕССИОНАЛЬНОЕ'),
 ('3','3 - СРЕДНЕЕ (ПОЛНОЕ) ОБЩЕЕ'),
@@ -5213,15 +5213,15 @@ insert into statcards_spr_f2r12(code, name) values
 ('5','5 - НАЧАЛЬНОЕ ОБЩЕЕ'),
 ('6','6 - НЕ ИМЕЕТ НАЧАЛЬНОГО ОБРАЗОВАНИЯ'),
 ('7','7 - НАЧАЛЬНОЕ ПРОФЕССИОНАЛЬНОЕ');
-delete from statcards_spr_f2r15;
-insert into statcards_spr_f2r15(code, name) values
+delete from guide_spr_f2r15;
+insert into guide_spr_f2r15(code, name) values
 ('1','1 - МЕСТНЫЙ ЖИТЕЛЬ'),
 ('2','2 - ЖИТЕЛЬ ДРУГОЙ ОБЛАСТИ, КРАЯ, РЕСПУБЛИКИ, ВХОДЯЩЕЙ В СОСТАВ РОССИИ'),
 ('3','3 - ПРОЖИВАЛ В ОБЩЕЖИТИИ'),
 ('4','4 - НАХОДИЛСЯ В ИУ'),
 ('5','5 - БОМЖ');
-delete from statcards_spr_f2r16;
-insert into statcards_spr_f2r16(code, name) values
+delete from guide_spr_f2r16;
+insert into guide_spr_f2r16(code, name) values
 ('01','01 - ЧАСТНАЯ ПОЕЗДКА'),
 ('02','02 - ТУРИЗМ'),
 ('03','03 - КОМАНДИРОВКА'),
@@ -5235,3 +5235,11 @@ insert into statcards_spr_f2r16(code, name) values
 ('13','13 - В Т.Ч. ТРУДОВОЙ'),
 ('14','14 - НЕЗАКОННЫЙ'),
 ('15','15 - СООТЕЧЕСТВЕННИК-УЧАСТНИК ГОСУДАРСТВЕННОЙ ПРОГРАММЫ');
+delete from guide_spr_f10r7o;
+insert into guide_spr_f10r7o(code,name) values
+('02','02 - ОТДЕЛ №2 УЭБИПК'),
+('03','03 - ОТДЕЛ №3 УЭБИПК'),
+('04','04 - ОТДЕЛ №4 УЭБИПК'),
+('06','06 - ОТДЕЛ №6 УЭБИПК'),
+('41','41 - МРО №1 УЭБИПК'),
+('42','42 - МРО №2 УЭБИПК');

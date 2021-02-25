@@ -71,6 +71,16 @@ class SPR_F10R7_1(models.Model):
     def __str__(self):
         return self.code + ' | ' + self.name
 
+class SPR_F10R7o(models.Model):
+    code = models.CharField(max_length=2, unique=True, verbose_name='Код')
+    name = models.CharField(max_length=50, verbose_name='Наименование')
+    class Meta:
+        verbose_name = 'F1.0 R7o Отдел, выявивший преступление'
+        verbose_name_plural = 'F1.0 R7o Отделы, выявившие преступления'
+        ordering = ['code']
+    def __str__(self):
+        return self.code + ' | ' + self.name
+
 #r10.3=#r9=f1.1r34=f1.2r14=8112
 class SPR_F10R9(models.Model):
     code = models.CharField(max_length=5, unique=True, verbose_name='Код')

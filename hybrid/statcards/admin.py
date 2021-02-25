@@ -2,9 +2,6 @@ from django.contrib import admin
 from .models import *
 
 
-
-
-
 # @admin.register(Post)
 # class PostAdmin(admin.ModelAdmin):
 #     list_display = ('title', 'slug', 'author', 'publish', 'status')
@@ -14,6 +11,7 @@ from .models import *
 #     raw_id_fields = ('author',)
 #     date_hierarchy = 'publish'
 #     ordering = ('status', 'publish')
+
 admin.site.register(FORM1)
 
 # @admin.register(FORM1)

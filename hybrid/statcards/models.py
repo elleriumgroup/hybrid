@@ -1,18 +1,7 @@
 from django.db import models
 from guide.models import *
-# from guide.models import SPR_F10R1_ORGAN
-# from guide.models import SPR_F10R2
-# from guide.models import SPR_F10R1
-# from guide.models import SPR_F10R51
-# from guide.models import SPR_F10R3
-# from guide.models import SPR_F10R3_GASORG
 
 
-
-# Статистическая карточка Форма 1
-
-
-# Форма 1-1.1-1.2 (полная)
 class FORM1(models.Model):
     r01 = models.ForeignKey(SPR_F10R1, on_delete=models.CASCADE, verbose_name='Орган', blank=False)
     r01_organ = models.ForeignKey(SPR_F10R1_ORGAN, on_delete=models.CASCADE, verbose_name='Код органа', blank=False)
@@ -29,12 +18,18 @@ class FORM1(models.Model):
     r05_delo_post = models.CharField(max_length=100, verbose_name='поступило из...', blank=True, null=True)
     r05_delo_podsled = models.CharField(max_length=500, verbose_name='по подследственности из...', blank=True, null=True)
     d06 = models.DateField(verbose_name='Дата направления в ИЦ')
+    d07organ = models.ForeignKey(SPR_F10R1, on_delete=models.CASCADE, verbose_name='Орган', blank=True, null=True)
     d07 = models.DateField(verbose_name='Дата поступления в ИЦ')
+    d07o = models.ForeignKey(SPR_F10R7o, on_delete=models.CASCADE, verbose_name='Отдел,выявивший преступление', blank=True, null=True)
+    d07_1 = models.ForeignKey(SPR_F10R7_1, on_delete=models.CASCADE, verbose_name='Восстановлено на учет в числе ППЛ', blank=True, null=True)
+    d07_1_date = models.DateField(verbose_name='Дата восстановения', blank=True, null=True)
+
     # ------ добавь новые поля
     r11 = models.DateField(verbose_name='Дата возбуждения УД', blank=False)
     class Meta:
         verbose_name = 'Статкарточка на выявленное преступление (ФОРМА 1)'
         verbose_name_plural = 'Статкарточки на выявленное преступление (ФОРМА 1)'
+        ordering = ['r03_gasps']
         indexes = [
             models.Index(fields=['r01', 'r02', 'r03_year', 'r03_gasorg', 'r04'], name='inx_form1_gasps')
         ]
